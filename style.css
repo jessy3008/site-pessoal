@@ -2,122 +2,109 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
 }
 
 body {
-    background-color: #F7CBCF;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
 }
 
-/* Cabeçalho */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
 header {
-    max-width: 1844px;
-    max-height: 90px;
-    background-color: #975F6D;
-    position: sticky;
-    top: 0;
-    flex-wrap: wrap;
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
 }
 
-.cabecalho > div > img {
-    margin: 5px;
-    width: 190px;
-    height: 90px;
-}
-
-.cabecalho {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-right: 40px;
-}
-
-.cabecalho > div > a {
-    text-decoration: none;
-    color: white;
+header h1 {
+    float: left;
     margin-left: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
+}
+
+header nav {
+    float: right;
+    margin-right: 20px;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    background: url('img/img_gero.png') no-repeat center center/cover;
+    color: #fff;
+    padding: 100px 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 500px; /* Defina uma altura mínima, se necessário */
+}
+
+.hero .container {
+    max-width: 50%;
+    text-align: right; /* Alinha o texto à direita */
+}
+
+.hero h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.servicos, .valores, .experiencia, .areas {
+    padding: 50px 0;
+}
+
+.servico, .area, .stat {
+    background: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.servico h3, .area h3, .stat h3 {
     margin-bottom: 10px;
 }
 
-.cabecalho > div > a:hover {
-    color: #E794A8;
-    font-size: 18px;
-}
-
-/* Hero Section */
-.hero {
-    height: 60vh; /* Mantém a altura reduzida da seção */
-    background: linear-gradient(45deg, #E89FA7, #F7CBCF); /* Fundo gradiente */
+.stats {
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    padding: 20px;
+    justify-content: space-around;
 }
 
-/* Elementos do Hero */
-.elementosHero {
-    display: flex;
-    align-items: center; /* Centraliza verticalmente o conteúdo */
-    justify-content: space-between; /* Deixa a imagem e o texto distantes */
-    max-width: 1200px; /* Define a largura máxima da seção */
-    width: 100%;
+.stats .stat {
+    width: 22%;
 }
 
-/* Estilos da imagem no Hero */
-.elementosHero figure {
-    margin: 0;
-}
-
-.elementosHero figure img {
-    width: 250px; /* Diminui o tamanho da imagem */
-    height: 250px; /* Garante que a imagem seja um círculo perfeito */
-    border-radius: 50%; /* Torna a imagem circular */
-    object-fit: cover; /* Garante que a imagem se ajuste bem dentro do círculo */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
-}
-
-/* Estilos do Texto no Hero */
-.textoHero {
-    flex: 1; /* Ocupa o espaço restante ao lado da imagem */
-    margin-left: 40px; /* Adiciona espaço entre a imagem e o texto */
-    text-align: left; /* Alinha o texto à esquerda */
-}
-
-.textoHero h1 {
-    font-size: 3em;
-    color: #000; /* Cor preta para o título */
-    margin-bottom: 10px; /* Espaçamento abaixo do título */
-}
-
-.textoHero p {
-    font-size: 1.5em;
-    color: #333;
-    margin-bottom: 20px; /* Espaço abaixo do texto descritivo */
-}
-
-/* Estilo do Botão no Hero */
-.buttonHero {
-    margin-top: 20px; /* Espaço entre o texto e o botão */
-}
-
-.buttonHero a {
-    padding: 10px 20px;
-    background-color: #975F6D;
-    color: white;
-    text-decoration: none;
-    font-size: 1.2em;
-    border-radius: 5px;
-}
-
-.buttonHero a:hover {
-    background-color: #E794A8;
+footer {
+    background: #333;
     color: #fff;
-}
-
-.elementosHero figure img {
-    max-width: 400px;
-    border-radius: 50%;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: center;
+    padding: 10px 0;
 }
