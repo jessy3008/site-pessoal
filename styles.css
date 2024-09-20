@@ -7,7 +7,7 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #2c2c2e;
+    background-color: #2b1821;
     color: white;
 }
 
@@ -44,12 +44,13 @@ nav ul li a:hover {
 
 
 .hero {
-    background: linear-gradient(135deg, #3b0c59, #6d28d9);
+    background: linear-gradient(135deg, #2b1821, #6d28d9);
     position: relative;
     display: flex;
     justify-content: center;
     align-items: flex-end; /* Alinha o conteúdo na parte inferior */
     overflow: hidden; /* Garante que a imagem fora da seção não seja visível */
+    height: 650px;
 }
 
 .hero-content {
@@ -60,7 +61,7 @@ nav ul li a:hover {
 }
 
 .hero img {
-    width: 400px;
+    width: 680px;
     justify-items: flex-end;
 }
 
@@ -135,32 +136,77 @@ nav ul li a:hover {
     z-index: 1;
 }
 
+.hero-text h1 {
+    font-size: 50px;
+}
+
 
 .carta {
-    background-color: #2c2c2e;
+    background-color: #2b1e34;
     padding: 2rem;
     text-align: center;
 }
 
+.carta h1 {
+    color:#d57bed;
+    padding-bottom: 0px;
+}
+
+.carta p {
+    color: #eb9add;
+}
+
+
 .curiosidades {
-    background-color: #6d28d9;
-    padding: 2rem;
     text-align: center;
+    padding: 2rem 0;
+    background-color: #753a86;
+}
+
+.curiosidades h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #ffffff;
 }
 
 .curiosidades .icons {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 6rem; /* Espaçamento entre os cards */
     margin-top: 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto; /* Centraliza o grid na página */
 }
 
 .curiosidades .icon {
     text-align: center;
+    background-color:#2b1e34;
+    padding: 1rem;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
 }
+
+.curiosidades .icon:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+.curiosidades .icon img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+}
+
+.curiosidades .icon p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #f6f6f6;
+}
+
 
 .projetos {
     padding: 2rem;
-    background-color: #2c2c2e;
+    background-color:#2b1e34;
     text-align: center;
 }
 
@@ -171,15 +217,37 @@ nav ul li a:hover {
 }
 
 .project-card {
-    background-color: #4c1d95;
+    background-color:#753a86;
     padding: 1.5rem;
     width: 30%;
     border-radius: 10px;
 }
 
+.project-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #d946ef;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+    background-color: #be185d;
+}
+
+.project-card p {
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    padding: 10px;
+}
+
 .causos {
     padding: 2rem;
-    background-color: #6d28d9;
+    background-color:#6d28d9;
     text-align: center;
 }
 
@@ -188,7 +256,7 @@ nav ul li a:hover {
     align-items: center;
     justify-content: center;
     padding: 2rem;
-    background-color: #2c2c2e;
+    background-color:#2b1e34;
 }
 
 .habilidades img {
@@ -207,7 +275,7 @@ nav ul li a:hover {
 }
 
 footer {
-    background-color: #6d28d9;
+    background-color: #753a86;
     padding: 1rem;
     text-align: center;
 }
